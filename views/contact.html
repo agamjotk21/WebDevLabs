@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Agam Kukreja">
@@ -12,23 +18,25 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href = /WebDevLabs/>Home</a></li>
-                <li><a href = cv.html>CV</a></li>
-                <li><a href = contact.html>Contact</a></li>
-                <li><a href = fun.html>For Fun</a></li>
-            </ul>
-        </nav>
-        <h1>
+        <h1 id = "webname">
             Agam Kukreja
         </h1>
+        <nav>
+            <ul>
+                <a href = /index.html>Home</a>
+                <a href = cv.html>CV</a>
+                <a href = contact.html>Contact</a>
+                <a href = fun.html>For Fun</a>
+            </ul>
+        </nav>
+        
     </header>
     <div class = "main">
         <h2>
             Contact Me
         </h2>
         
+       
         <form action = "submit.php" method = "post">
             <div>
                 <label for = "name"> Your name:</label>
@@ -37,15 +45,19 @@
                 <label for = "email"> Your email:</label>
                 <input type = "email" id = "email" name = "email" required>
 
-            <div>
                 <label for = "comment">Your comment:</label>
                 <textarea id = "comment" name = "comment" rows = "4" cols = "10" required></textarea>
             </div>
-            <input type = "submit" value = "Send"
+            <input type = "submit" value = "Send">
         </form>
+    
 
         <h3> My contact information</h3>
-        <table border="1">
+        <table>
+            <tr>
+                <th>Contact Method</th>
+                <th>Description</th>
+            </tr>
             <tr>
                 <td> Email</td>
                 <td>Agamjotk@andrew.cmu.edu</td>
@@ -54,6 +66,11 @@
             <tr>
                 <td>Phone Number</td>
                 <td>669-467-3306</td>
+            </tr>
+
+            <tr>
+                <td>LinkedIn</td>
+                <td>Agam Kukreja</td>
             </tr>
         </table>
     </div>
